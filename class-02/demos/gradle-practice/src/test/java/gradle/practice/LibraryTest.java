@@ -24,4 +24,27 @@ public class LibraryTest {
         assertEquals(potato.giveIceCream("Kamit"), "Give Kamit chocolate cookie dough ice cream");
         assertEquals(potato.giveIceCream("Garhett"), "Give Garhett chocolate cookie dough ice cream");
     }
+
+    @Test public void testOneOrTwoIsRandom() {
+        Library lib = new Library();
+        int[] nums = new int[10000000];
+        for(int i = 0; i < 10000000; i++){
+            nums[i] = lib.oneOrTwo();
+        }
+        // [1,2,2,2,1,2,1,2,2,1];
+        // [2,2,2,2,2,2,2,2,2,1];
+        boolean thereIsAOne = false;
+        boolean thereIsATwo = false;
+        for(int i = 0; i < nums.length; i++){
+            if(nums[i] == 1){
+                thereIsAOne = true;
+            }
+            if(nums[i] == 2){
+                thereIsATwo = true;
+            }
+        }
+
+        assertTrue("there is a one is true", thereIsAOne);
+        assertTrue("there is a two is true", thereIsATwo);
+    }
 }

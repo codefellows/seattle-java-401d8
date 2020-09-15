@@ -12,4 +12,13 @@ public class Library {
     public String giveIceCream(String name){ // Garhett
         return  "Give " + name + " chocolate cookie dough ice cream"; // Give Garhett chocolate cookie dough ice cream
     }
+
+    public int oneOrTwo(){ //return a 1 or a 2
+        double random = Math.random();
+        if(random < 0.5){
+            return 1;
+        } else {
+            return 2;
+        }
+    }
 }
