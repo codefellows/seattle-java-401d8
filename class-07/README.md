@@ -1,5 +1,16 @@
 # Class 7: Interfaces and Variables (and other relationships between classes)
 
+## Weekly Feedback
+
+- Feel like I am not grasping everything
+- Enjoy whiteboarding, it is humbling though
+- Code review was mentioned a lot as helpful
+- There is a lot of documentation, some of it is confusing or vague
+- Help in lab is more question driven
+- Some labs are ungraded
+- Working in groups is helpful
+- Shoutouts to Bade and Andrew
+
 ## Agenda
 - Announcements
 - Code review
