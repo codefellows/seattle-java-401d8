@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<!--person, daysSinceILastSawYou, message ::: came from mPotato.addAttribute("person", person) ...-->
+    <h1>Greeting</h1>
+    <h2 th:text="'From : ' + ${person}">From : Anyone</h2>
+    <p th:text="${message}"></p>
+    <p th:if="${daysSinceISawYou}" th:text="${daysSinceISawYou} + ' days since I saw you' "></p>
+    <p th:unless="${daysSinceISawYou}">Idk when I last saw you</p>
+<!--if ... unless will be our if ... else of thymeleaf (feels thymeleafy)-->
+</body>
+</html>
