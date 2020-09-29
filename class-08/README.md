@@ -2,7 +2,7 @@
 
 ## Agenda
 - Announcements
-  - Tomorrow's lab is pair programming! So let's talk about pair programming!
+  - Today's lab is pair programming! So let's talk about pair programming!
 - Code review
 - Daily Systems: Home directories
 - Warmup questions

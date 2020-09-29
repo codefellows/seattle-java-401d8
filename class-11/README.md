@@ -1,5 +1,14 @@
 # Class 11: Intro to Spring MVC
 
+## Weekly Feedback
+
+- Loving whiteboarding.
+- How to whiteboard neater?
+- Career coaching schedule for Friday. We have some freedom here.
+- Starting to look for jobs.
+- Lots of ambiguity in the assignments this week. They could have been solved simply or using all the new materials at once.
+- Bade is a wizard.
+
 ## Resources
 * [The Spring Initializr \[sic\]](https://start.spring.io/)
 * [Spring Guides: Serving Web Content](https://spring.io/guides/gs/serving-web-content/)
