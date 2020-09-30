@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Our Feelings</h1>
+
+    <form action="/emotion" method="POST">
+
+        Feeling <input type="text" name="feeling">
+        Laughing? <input type="checkbox" name="causesUsToLaugh">
+        Person Having <input type="text" name="personHavingIt">
+        Level <input type="number" name="level">
+        Expression <input type="text" name="expression">
+        Color <input type="text" name="color">
+
+        <input type="submit">
+    </form>
+
+    <table>
+        <tr>
+            <th>Emotion</th>
+            <th>Who</th>
+            <th>Why</th>
+            <th>How</th>
+            <th>Laughing?</th>
+        </tr>
+        <tr th:if="${feelings}" th:each="feeling : ${feelings}" > <!-- for(Emotion emotion : feelings) -->
+            <td th:text="${feeling.feeling}">Happy</td>
+            <td th:text="${feeling.personHavingIt}">Nich</td>
+<!--            even though personHavingIt Is Protected, thymeleaf calls the getters if the . notation doesnt work-->
+            <td th:if="${feeling.expressions.size() > 0}" th:text="${feeling.expressions.get(0).action}">Teaching cool peeps</td>
+            <td th:text="${feeling.level}">9</td>
+            <td th:text="${feeling.causesUsToLaugh}">false</td>
+            <td th:each="expression : ${feeling.expressions}" th:text="${expression.action}"></td>
+            <td>
+                <form th:action="'/emotion/delete/' + ${feeling.id} " method="POST">
+                    <input type="submit" value="bottle up our emotions">
+                </form>
+            </td>
+            <td>
+                <form action="/expression" method="POST">
+                    <input type="hidden" name="emotionId" th:value="${feeling.id}">
+                    Expression : <input type="text" name="action">
+                    <input type="submit" value="add">
+                </form>
+            </td>
+
+        </tr>
+    </table>
+</body>
+</html>
