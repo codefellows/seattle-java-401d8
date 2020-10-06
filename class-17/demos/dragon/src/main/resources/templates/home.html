@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div th:replace="fragments/nav :: nav"></div>
+
+
+    <h1>We are home</h1>
+
+    <form action="/newuser" method="POST">
+        <input type="text" name="username">
+        <input type="text" name="passwordsilly">
+        <input type="submit">
+    </form>
+
+<div th:replace="fragments/nav :: ice-cream"></div>
+<div th:insert="fragments/nav :: ice-cream"></div>
+<div th:include="fragments/nav :: ice-cream"></div>
+
+</body>
+</html>

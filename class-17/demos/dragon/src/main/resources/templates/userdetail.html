@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 th:if="${user}" th:text="${user.username}"></h1>
+    <h1 th:unless="${user}" >That user does not exist yet, invite them</h1>
+
+    <form action="/savedragon" method="POST">
+        color <input type="text" name="color">
+        location <input type="text" name="location">
+        age <input type="number" name="age">
+        <input type="number" name="id" th:value="${user.id}">
+<!--        make hidden -->
+        <input type="submit">
+    </form>
+
+    <section th:if="${user}">
+        // snowdrop's dragons || gingers || nichs
+        <p th:each="dragon : ${user.dragons}" th:text="${dragon}"></p>
+    </section>
+</body>
+</html>
