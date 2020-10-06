@@ -5,6 +5,9 @@
 - Code review
 - Daily Systems: info pages
 - Lecture
+- Partials
+- Error pages
+- Testing a live app
 - Lab intro
 
 ## Learning Objectives

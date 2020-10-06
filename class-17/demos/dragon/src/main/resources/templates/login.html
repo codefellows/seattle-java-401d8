@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<div th:insert="fragments/nav :: nav"></div>
+
+    <h1>You need to log in</h1>
+
+    <form action="/login" method="POST">
+        <input type="text" name="username">
+        <input type="password" name="password">
+        <input type="submit">
+    </form>
+</body>
+</html>
