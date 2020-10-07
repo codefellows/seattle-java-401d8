@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 th:if="${user}" th:text="${user.username}"></h1>
+    <h1 th:unless="${user}" >That user does not exist yet, invite them</h1>
+
+    <form action="/savedragon" method="POST">
+        color <input type="text" name="color">
+        location <input type="text" name="location">
+        age <input type="number" name="age">
+        <input type="hidden" name="id" th:value="${user.id}">
+<!--        make hidden -->
+        <input type="submit">
+    </form>
+
+    <form action="/roastMarshmallow" method="post">
+        <input type="hidden" name="username" th:value="${user.username}">
+        <label for="roaster">
+            Dragon Roasting Marshmallow
+            <select name="roaster" >
+                <option th:each="dragon : ${user.dragons}" th:value="${dragon.id}" th:text="${dragon.location}">Ocean</option>
+            </select>
+        </label>
+        <label for="roastee">
+            Dragon Receiving Marshmallow
+            <select name="roastee">
+                <option th:each="dragon : ${user.dragons}" th:value="${dragon.id}" th:text="${dragon.location}">Ocean</option>
+            </select>
+        </label>
+
+        <input type="submit" value="have dragon roast marshmallow for other dragon">
+
+    </form>
+
+    <section th:if="${user}">
+        // snowdrop's dragons || gingers || nichs
+        <section th:each="dragon : ${user.dragons}">
+            <p  th:text="${dragon}" th:style="'background-color:' + ${dragon.color}"></p>
+            <ul>
+                <li
+                        th:each="mmHelper : ${dragon.dragonsWhoHaveGivenMeMarshmallows}"
+                        th:text="${mmHelper.location}"
+                        th:style="'background-color:' + ${mmHelper.color}"
+                ></li>
+            </ul>
+        </section>
+    </section>
+</body>
+</html>
