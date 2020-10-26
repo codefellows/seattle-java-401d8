@@ -1,10 +1,10 @@
-# Lecture 29: Room
+# Lecture 31: Testing, Espresso, and a Preview of AWS
 
 ## Agenda
 - Announcements
 - Code review
 - Lecture
-    - How Room works: Databases, DAOs, and Entities
-    - Working with DAOs
+    - AWS introduction
+    - AWS Amplify Practice
 - Lab intro
 - (if time) Whiteboard practice
