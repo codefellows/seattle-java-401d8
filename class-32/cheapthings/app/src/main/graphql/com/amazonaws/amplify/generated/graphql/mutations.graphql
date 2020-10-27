@@ -1,0 +1,40 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateCheapItem(
+  $input: CreateCheapItemInput!
+  $condition: ModelCheapItemConditionInput
+) {
+  createCheapItem(input: $input, condition: $condition) {
+    id
+    thingName
+    quantity
+    price
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateCheapItem(
+  $input: UpdateCheapItemInput!
+  $condition: ModelCheapItemConditionInput
+) {
+  updateCheapItem(input: $input, condition: $condition) {
+    id
+    thingName
+    quantity
+    price
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteCheapItem(
+  $input: DeleteCheapItemInput!
+  $condition: ModelCheapItemConditionInput
+) {
+  deleteCheapItem(input: $input, condition: $condition) {
+    id
+    thingName
+    quantity
+    price
+    createdAt
+    updatedAt
+  }
+}

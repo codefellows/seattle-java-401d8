@@ -1,0 +1,15 @@
+{
+  "cheapthing": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cheapthings-cheapthing-101359-authRole",
+      "UnauthRoleArn": "arn:aws:iam::743080406423:role/amplify-cheapthings-cheapthing-101359-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::743080406423:role/amplify-cheapthings-cheapthing-101359-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-cheapthings-cheapthing-101359-deployment",
+      "UnauthRoleName": "amplify-cheapthings-cheapthing-101359-unauthRole",
+      "StackName": "amplify-cheapthings-cheapthing-101359",
+      "StackId": "arn:aws:cloudformation:us-west-2:743080406423:stack/amplify-cheapthings-cheapthing-101359/cf61f390-1877-11eb-ae9e-0a075c502ed4",
+      "AmplifyAppId": "dtegio1j8ur58"
+    }
+  }
+}
