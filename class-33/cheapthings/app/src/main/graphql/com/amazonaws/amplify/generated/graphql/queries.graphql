@@ -1,0 +1,84 @@
+# this is an auto generated file. This will be overwritten
+query GetCheapItem($id: ID!) {
+  getCheapItem(id: $id) {
+    id
+    thingName
+    quantity
+    price
+    foundAt {
+      id
+      name
+      address
+      cheapItems {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+query ListCheapItems(
+  $filter: ModelCheapItemFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listCheapItems(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      thingName
+      quantity
+      price
+      foundAt {
+        id
+        name
+        address
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetStore($id: ID!) {
+  getStore(id: $id) {
+    id
+    name
+    address
+    cheapItems {
+      items {
+        id
+        thingName
+        quantity
+        price
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+query ListStores(
+  $filter: ModelStoreFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listStores(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      address
+      cheapItems {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}

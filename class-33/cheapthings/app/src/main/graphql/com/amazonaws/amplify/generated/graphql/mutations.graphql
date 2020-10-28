@@ -1,0 +1,139 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateCheapItem(
+  $input: CreateCheapItemInput!
+  $condition: ModelCheapItemConditionInput
+) {
+  createCheapItem(input: $input, condition: $condition) {
+    id
+    thingName
+    quantity
+    price
+    foundAt {
+      id
+      name
+      address
+      cheapItems {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateCheapItem(
+  $input: UpdateCheapItemInput!
+  $condition: ModelCheapItemConditionInput
+) {
+  updateCheapItem(input: $input, condition: $condition) {
+    id
+    thingName
+    quantity
+    price
+    foundAt {
+      id
+      name
+      address
+      cheapItems {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteCheapItem(
+  $input: DeleteCheapItemInput!
+  $condition: ModelCheapItemConditionInput
+) {
+  deleteCheapItem(input: $input, condition: $condition) {
+    id
+    thingName
+    quantity
+    price
+    foundAt {
+      id
+      name
+      address
+      cheapItems {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateStore(
+  $input: CreateStoreInput!
+  $condition: ModelStoreConditionInput
+) {
+  createStore(input: $input, condition: $condition) {
+    id
+    name
+    address
+    cheapItems {
+      items {
+        id
+        thingName
+        quantity
+        price
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateStore(
+  $input: UpdateStoreInput!
+  $condition: ModelStoreConditionInput
+) {
+  updateStore(input: $input, condition: $condition) {
+    id
+    name
+    address
+    cheapItems {
+      items {
+        id
+        thingName
+        quantity
+        price
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteStore(
+  $input: DeleteStoreInput!
+  $condition: ModelStoreConditionInput
+) {
+  deleteStore(input: $input, condition: $condition) {
+    id
+    name
+    address
+    cheapItems {
+      items {
+        id
+        thingName
+        quantity
+        price
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}

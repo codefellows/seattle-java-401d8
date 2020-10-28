@@ -1,0 +1,14 @@
+type CheapItem @model {
+  id: ID!
+  thingName: String
+  quantity: Int
+  price: Float
+  foundAt: Store @connection(name: "storeItems")
+}
+
+type Store @model {
+  id: ID!
+  name: String
+  address: String
+  cheapItems: [CheapItem] @connection(name: "storeItems")
+}

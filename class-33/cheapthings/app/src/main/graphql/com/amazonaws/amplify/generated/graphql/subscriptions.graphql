@@ -1,0 +1,121 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateCheapItem {
+  onCreateCheapItem {
+    id
+    thingName
+    quantity
+    price
+    foundAt {
+      id
+      name
+      address
+      cheapItems {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateCheapItem {
+  onUpdateCheapItem {
+    id
+    thingName
+    quantity
+    price
+    foundAt {
+      id
+      name
+      address
+      cheapItems {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteCheapItem {
+  onDeleteCheapItem {
+    id
+    thingName
+    quantity
+    price
+    foundAt {
+      id
+      name
+      address
+      cheapItems {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateStore {
+  onCreateStore {
+    id
+    name
+    address
+    cheapItems {
+      items {
+        id
+        thingName
+        quantity
+        price
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateStore {
+  onUpdateStore {
+    id
+    name
+    address
+    cheapItems {
+      items {
+        id
+        thingName
+        quantity
+        price
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteStore {
+  onDeleteStore {
+    id
+    name
+    address
+    cheapItems {
+      items {
+        id
+        thingName
+        quantity
+        price
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
