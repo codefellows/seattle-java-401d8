@@ -1,0 +1,5 @@
+type Student @model {
+  id: ID!
+  name: String
+  house: String
+}
