@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-sortinghat-dev-100303-authRole",
+      "UnauthRoleArn": "arn:aws:iam::743080406423:role/amplify-sortinghat-dev-100303-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::743080406423:role/amplify-sortinghat-dev-100303-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-sortinghat-dev-100303-deployment",
+      "UnauthRoleName": "amplify-sortinghat-dev-100303-unauthRole",
+      "StackName": "amplify-sortinghat-dev-100303",
+      "StackId": "arn:aws:cloudformation:us-west-2:743080406423:stack/amplify-sortinghat-dev-100303/a8945e20-1d35-11eb-bb2e-064065852281",
+      "AmplifyAppId": "d15yvm6r3w1kc2"
+    },
+    "categories": {
+      "auth": {
+        "sortinghat978b3535": {}
+      }
+    }
+  }
+}
