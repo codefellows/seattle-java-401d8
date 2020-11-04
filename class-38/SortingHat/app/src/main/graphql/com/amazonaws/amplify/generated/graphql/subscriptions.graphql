@@ -1,0 +1,28 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateStudent {
+  onCreateStudent {
+    id
+    name
+    house
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateStudent {
+  onUpdateStudent {
+    id
+    name
+    house
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteStudent {
+  onDeleteStudent {
+    id
+    name
+    house
+    createdAt
+    updatedAt
+  }
+}

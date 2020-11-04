@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         configureAws();
         setupRecyclerView();
+        Amplify.Auth.
 
     }
 
