@@ -1,0 +1,13 @@
+type Student @model {
+  id: ID!
+  name: String
+  potions: [Potion] @connection(keyName: "brewed")
+}
+
+type Potion @model {
+  id: ID!
+  name: String
+  student: Student @connection(keyName: "brewed")
+  success: Boolean
+  color: String
+}
