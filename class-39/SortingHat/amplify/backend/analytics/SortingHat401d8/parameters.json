@@ -1,0 +1,22 @@
+{
+    "appName": "SortingHat401d8",
+    "roleName": "pinpointLambdaRole2151652d",
+    "cloudformationPolicyName": "cloudformationPolicy2151652d",
+    "cloudWatchPolicyName": "cloudWatchPolicy2151652d",
+    "pinpointPolicyName": "pinpointPolicy2151652d",
+    "authPolicyName": "pinpoint_amplify_2151652d",
+    "unauthPolicyName": "pinpoint_amplify_2151652d",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "appId": "e7a6e1226a1e4f4a83b2866997d1e95a"
+}

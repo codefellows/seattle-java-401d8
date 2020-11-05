@@ -1,0 +1,115 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateStudent {
+  onCreateStudent {
+    id
+    name
+    potions {
+      items {
+        id
+        color
+        name
+        success
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateStudent {
+  onUpdateStudent {
+    id
+    name
+    potions {
+      items {
+        id
+        color
+        name
+        success
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteStudent {
+  onDeleteStudent {
+    id
+    name
+    potions {
+      items {
+        id
+        color
+        name
+        success
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreatePotion {
+  onCreatePotion {
+    id
+    student {
+      id
+      name
+      potions {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    color
+    name
+    success
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdatePotion {
+  onUpdatePotion {
+    id
+    student {
+      id
+      name
+      potions {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    color
+    name
+    success
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeletePotion {
+  onDeletePotion {
+    id
+    student {
+      id
+      name
+      potions {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    color
+    name
+    success
+    createdAt
+    updatedAt
+  }
+}

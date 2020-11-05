@@ -1,0 +1,80 @@
+# this is an auto generated file. This will be overwritten
+query GetStudent($id: ID!) {
+  getStudent(id: $id) {
+    id
+    name
+    potions {
+      items {
+        id
+        color
+        name
+        success
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+query ListStudents(
+  $filter: ModelStudentFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listStudents(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      potions {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetPotion($id: ID!) {
+  getPotion(id: $id) {
+    id
+    student {
+      id
+      name
+      potions {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    color
+    name
+    success
+    createdAt
+    updatedAt
+  }
+}
+query ListPotions(
+  $filter: ModelPotionFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listPotions(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      student {
+        id
+        name
+        createdAt
+        updatedAt
+      }
+      color
+      name
+      success
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "api": {},
+  "auth": {
+    "potionsfc591841": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "storage": {
+    "potionimages": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
+  },
+  "notifications": {
+    "PotionsTIJwc": {
+      "service": "Pinpoint",
+      "channels": [
+        "FCM"
+      ]
+    }
+  }
+}
