@@ -1,0 +1,133 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateStudent(
+  $input: CreateStudentInput!
+  $condition: ModelStudentConditionInput
+) {
+  createStudent(input: $input, condition: $condition) {
+    id
+    name
+    potions {
+      items {
+        id
+        name
+        color
+        success
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateStudent(
+  $input: UpdateStudentInput!
+  $condition: ModelStudentConditionInput
+) {
+  updateStudent(input: $input, condition: $condition) {
+    id
+    name
+    potions {
+      items {
+        id
+        name
+        color
+        success
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteStudent(
+  $input: DeleteStudentInput!
+  $condition: ModelStudentConditionInput
+) {
+  deleteStudent(input: $input, condition: $condition) {
+    id
+    name
+    potions {
+      items {
+        id
+        name
+        color
+        success
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation CreatePotion(
+  $input: CreatePotionInput!
+  $condition: ModelPotionConditionInput
+) {
+  createPotion(input: $input, condition: $condition) {
+    id
+    name
+    color
+    success
+    student {
+      id
+      name
+      potions {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdatePotion(
+  $input: UpdatePotionInput!
+  $condition: ModelPotionConditionInput
+) {
+  updatePotion(input: $input, condition: $condition) {
+    id
+    name
+    color
+    success
+    student {
+      id
+      name
+      potions {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation DeletePotion(
+  $input: DeletePotionInput!
+  $condition: ModelPotionConditionInput
+) {
+  deletePotion(input: $input, condition: $condition) {
+    id
+    name
+    color
+    success
+    student {
+      id
+      name
+      potions {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
