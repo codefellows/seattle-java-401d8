@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "205768601756",
+    "firebase_url": "https://hogwarts-fc331.firebaseio.com",
+    "project_id": "hogwarts-fc331",
+    "storage_bucket": "hogwarts-fc331.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205768601756:android:7ff1e88059edb8650cbd59",
+        "android_client_info": {
+          "package_name": "com.ncarignan.potions"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "205768601756-ahqtjrms713os470e9lei2jnvjhd5t4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNDApU7tITsgO_-4FIz-LNGZTmVzlva-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "205768601756-ahqtjrms713os470e9lei2jnvjhd5t4n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205768601756:android:abd1df0ea7fadd7b0cbd59",
+        "android_client_info": {
+          "package_name": "com.ncarignan.sortinghat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "205768601756-ahqtjrms713os470e9lei2jnvjhd5t4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNDApU7tITsgO_-4FIz-LNGZTmVzlva-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "205768601756-ahqtjrms713os470e9lei2jnvjhd5t4n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

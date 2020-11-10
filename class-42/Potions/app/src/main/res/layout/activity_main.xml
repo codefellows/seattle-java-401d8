@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Brewed Potions"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignup" />
+
+    <TextView
+        android:id="@+id/textViewStudentDisplayedName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="All Students' Potions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/potions"
+        android:layout_width="266dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStudentDisplayedName" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Signup"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLogin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonNextStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewStudentDisplayedName"
+        app:layout_constraintStart_toEndOf="@+id/textViewStudentDisplayedName"
+        app:layout_constraintTop_toTopOf="@+id/textViewStudentDisplayedName"
+        app:srcCompat="@android:drawable/btn_plus" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPreviousStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewStudentDisplayedName"
+        app:layout_constraintEnd_toStartOf="@+id/textViewStudentDisplayedName"
+        app:layout_constraintTop_toTopOf="@+id/textViewStudentDisplayedName"
+        app:srcCompat="@android:drawable/btn_minus" />
+
+    <EditText
+        android:id="@+id/editTextTextNewStudentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="New Student"
+        app:layout_constraintEnd_toStartOf="@+id/buttonEnroll"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/potions" />
+
+    <Button
+        android:id="@+id/buttonEnroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enroll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextNewStudentName"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextNewStudentName" />
+
+    <EditText
+        android:id="@+id/editTextTextPotionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Potion Name"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPotionColor"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextNewStudentName" />
+
+    <EditText
+        android:id="@+id/editTextTextPotionColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Color"
+        app:layout_constraintEnd_toStartOf="@+id/buttonBrewPotion"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPotionName" />
+
+    <Button
+        android:id="@+id/buttonBrewPotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPotionColor"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPotionColor" />
+
+    <Switch
+        android:id="@+id/switchIsSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Successfully Brewed"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPotionColor"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPotionColor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
