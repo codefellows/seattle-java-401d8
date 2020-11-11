@@ -1,0 +1,27 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-potions-dev-110946-authRole",
+      "UnauthRoleArn": "arn:aws:iam::743080406423:role/amplify-potions-dev-110946-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::743080406423:role/amplify-potions-dev-110946-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-potions-dev-110946-deployment",
+      "UnauthRoleName": "amplify-potions-dev-110946-unauthRole",
+      "StackName": "amplify-potions-dev-110946",
+      "StackId": "arn:aws:cloudformation:us-west-2:743080406423:stack/amplify-potions-dev-110946/7a82f700-1f9a-11eb-923d-02cac338d32f",
+      "AmplifyAppId": "d16l7mfevgampd"
+    },
+    "categories": {
+      "auth": {
+        "potionsfc591841": {}
+      },
+      "notifications": {
+        "Pinpoint": {
+          "Name": "PotionsTIJwc-dev",
+          "Id": "d398ba9406764ccbbabc9296a42f792e",
+          "Region": "us-west-2"
+        }
+      }
+    }
+  }
+}
